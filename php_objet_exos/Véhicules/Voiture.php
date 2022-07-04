@@ -44,5 +44,9 @@ class Voiture
         return ($_val==="")? $this->moteur : $this->moteur=$_val;
     }
     
+    public function calcVitesseMax():int
+    {
+        return $this->vitesse_max-($this->poids*(30/100));
+    }
     
 }
